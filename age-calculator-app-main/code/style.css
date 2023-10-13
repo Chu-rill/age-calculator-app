@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(Poppins-Bold.ttf);
+}
+body {
+  font-family: "Poppins-Bold";
+  background-color: hsl(0, 0%, 86%);
+  display: flex;
+  justify-content: center;
+}
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 600px;
+  margin-left: 100px;
+  height: 500px;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 30px 30px 150px 30px;
+}
+::placeholder {
+  font-size: 24px;
+  font-weight: 900;
+}
+.first {
+  display: flex;
+  /* border-bottom: 1px solid lightgray; */
+  height: 90px;
+}
+.border {
+  width: 500px;
+  border-bottom: 1px solid lightgray;
+  margin-right: 5px;
+}
+.end {
+  display: flex;
+  align-items: center;
+}
+.first input {
+  width: 80%;
+  height: 30%;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 6px;
+  cursor: pointer;
+}
+.first input:focus {
+  border-color: hsl(259, 100%, 65%);
+}
+.first input:focus-visible {
+  outline: none;
+}
+.first span p:nth-child(1) {
+  font-weight: 900;
+  color: gray;
+  margin-bottom: 5px;
+}
+.error {
+  margin-top: 5px;
+  font-size: 10px;
+  color: hsl(0, 100%, 67%);
+  display: none;
+}
+.first span {
+  width: 150px;
+}
+.second {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.second h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 900;
+  height: 70px;
+}
+.second h1 span {
+  color: hsl(259, 100%, 65%);
+  font-size: 70px;
+  margin-right: 5px;
+  height: 70px;
+}
+.svg {
+  width: 70px;
+  height: 70px;
+  background-color: hsl(259, 100%, 65%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 300ms;
+}
+.svg:hover {
+  background-color: black;
+  cursor: pointer;
+}
+/* .svg path {
+  transition: fill 300ms;
+} */
+.svg:hover path {
+  fill: white;
+  stroke: white;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  body {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    width: 340px;
+    height: 510px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  .svg {
+    position: absolute;
+    z-index: 10;
+    left: 130px;
+  }
+  .end {
+    position: relative;
+    top: 80px;
+  }
+  .second {
+    margin-top: 90px;
+  }
+  .attribution {
+    margin-top: 50px;
+  }
+}

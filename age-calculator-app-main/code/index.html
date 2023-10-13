@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="start">
+        <div class="first">
+          <span
+            ><p class="header-day">Day</p>
+            <input class="days-input" type="text" placeholder="DD" />
+            <p class="error error-day"></p>
+          </span>
+          <span
+            ><p class="header-month">Month</p>
+            <input class="month-input" type="text" placeholder="MM" />
+            <p class="error error-month"></p>
+          </span>
+          <span
+            ><p class="header-year">Year</p>
+            <input class="year-input" type="text" placeholder="YYYY" />
+            <p class="error error-year"></p>
+          </span>
+        </div>
+        <div class="end">
+          <div class="border"></div>
+          <div class="svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="44"
+              viewBox="0 0 46 44"
+              class="hoverable-svg"
+              class="thick-fill-svg"
+            >
+              <g fill="black" stroke="black" stroke-width="2">
+                <path
+                  d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="second">
+        <h1><span class="year-output">--</span>years</h1>
+        <h1><span class="month-output">--</span>months</h1>
+        <h1><span class="days-output">--</span>days</h1>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Churchill Daniel</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
